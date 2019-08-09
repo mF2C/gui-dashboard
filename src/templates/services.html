@@ -1,0 +1,27 @@
+					<style type="text/css">
+						#page{
+							width:100%;
+							border:none;
+						}
+						#main{
+							padding:0!important;
+						}
+					</style>
+					<!-- div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+						<h1 class="h2">Services LC and instances</h1>
+					</div-->
+					<!-- div class="w-100 titoloSezione" ng-init="services.init();">TBD</div-->
+					<!-- div ng-include src="'https://10.39.252.40/sm/index.html'"></div>
+					<div ng-include src="'/melita/index.html'"></div-->	
+					<iframe id="page" ng-src="https://10.39.252.40/sm/index.html" ></iframe>
+					<!-- iframe src="https://10.39.252.40/sm/index.html"></iframe-->				
+				<script>
+					$("#page").css("height", $('.sidebar-sticky').outerHeight());
+					var iframe = document.getElementById("page");
+					
+					$(document).ready(function(){
+						var iFrameDOM = $("iframe#page").contents();
+
+						console.log(iFrameDOM.find("body"));
+					});
+				</script>

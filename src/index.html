@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" ng-app="app" >
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="Antonio Perra">
+		<title>mF2C DashBoard</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="css/vis.min.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			.bd-placeholder-img {
+				font-size: 1.125 rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			@media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+					font-size: 3.5 rem;
+				}
+			}
+		</style>
+		<!-- Custom styles for this template -->
+		<link href="css/dashboard.css" rel="stylesheet">
+	</head>
+	<body ng-controller="appCtrl as app" ng-init="app.init();">
+		<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+			<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+				<img alt="mF2C" 
+				style="height:40px; margin-right:5px"
+				src="images/logo.png"> mF2C
+			</a>
+			<!--input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"-->
+			<!-- ul class="navbar-nav px-3">
+				<li class="nav-item text-nowrap">
+					<a class="nav-link" href="#">Sign out</a>
+				</li>
+			</ul-->
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+					<div class="sidebar-sticky">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link active" id="menuHome" href="#"> <span data-feather="home"></span> Dashboard <span class="sr-only">(current)</span> </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#!/cimi" id="cimi">CIMI Resources Browser </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#!/eventStatus"></span> Event Status </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#!/slaViolations"></span> SLA Violations </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#!/userManagement"></span> User Management </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="menuServices" href="#!/services"></span> Services LC and instances </a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<main id="main" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+					<span  ng-view>
+		      		</span>
+					
+				</main>
+			</div>
+		</div>
+		<!-- script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+		<script type="text/javascript" src="script/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="script/angularjs/angular.min.js"></script>
+		<script src="script/angularjs/angular-route.min.js"></script>
+		<script src="script/bootstrap/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+		<script type="text/javascript" src="script/vis.min.js"></script>
+		<script type="text/javascript" src="script/angular-vis.js"></script>
+		<script type="text/javascript" src="script/app/app.js"></script>
+		<script type="text/javascript" src="script/app/home.js"></script>
+		<script type="text/javascript" src="script/app/cimi.js"></script>
+		<script type="text/javascript" src="script/app/eventStatus.js"></script>
+		<script type="text/javascript" src="script/app/slaViolations.js"></script>
+		<script type="text/javascript" src="script/app/userManagement.js"></script>
+		<script type="text/javascript" src="script/app/services.js"></script>
+		<!--script src="dashboard.js"></script-->
+	</body>
+</html>

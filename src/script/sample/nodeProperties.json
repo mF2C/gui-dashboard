@@ -1,0 +1,10 @@
+[
+			{"name": "IDkey", "value":"agent/1234"},
+			{"name": "deviceId", "value":"266d8767-7c11-4dc6-8ce2-5f5a07367c5b"},
+			{"name": "selfIP", "value":"127.0.0.1"},
+			{"name": "isLeader", "value":"true"},
+			{"name": "leaderIP", "value":"mf2c-cloud.mf2c"},
+			{"name": "isBackup", "value":"false"},
+			{"name": "backupIP", "value":"127.0.0.1"},
+			{"name": "authenticated", "value":"true"}
+		]

@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		    	{"id": 1, "label": "Bb", "shape": "circle", "color":"#FF0000",  "font": {"align": "right"}, "level":0},
+		        {"id": 2, "label": "L", "shape": "circle",  "color":"#00ccFF", "level":0},
+		        {"id": 3, "label": "N1", "shape": "circle",  "font": {"align": "middle"}, "level":1},
+		        {"id": 4, "label": "N2", "shape": "circle",  "font": {"align": "middle"}, "level":1},
+		        {"id": 5, "label": "N3", "shape": "circle",  "font": {"align": "middle"}, "level":1},
+		        {"id": 6, "label": "N4", "shape": "circle",  "font": {"align": "middle"}, "level":1},
+		        {"id": 7, "label": "N5", "shape": "circle",  "font": {"align": "middle"}, "level":1}
+		    ],
+		    "edges":[
+		    	  {"from": 2, "to": 1},
+			        {"from": 1, "to": 2},
+			        {"from": 2, "to": 3},
+			        {"from": 2, "to": 4},
+			        {"from": 2, "to": 5},
+			        {"from": 2, "to": 6},
+			        {"from": 2, "to": 7}
+		    ]
+}
