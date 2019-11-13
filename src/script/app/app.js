@@ -44,6 +44,10 @@
 		$scope.$route = $route;
 	     $scope.$location = $location;
 	     $scope.$routeParams = $routeParams;
-	    
+
+		this.remoteHost = $location.host();
+		this.guiUrls = {
+				lmui: 'http://' + temp.remoteHost + ':5000/'
+		}
 	});
 	
