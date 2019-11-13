@@ -1,0 +1,9 @@
+[
+	{"name": "deviceId", "key": "device_id"},
+	{"name": "IP", "key": "device_ip"},
+	{"name": "isLeader", "key": "isLeader"},
+	{"name": "leaderIP", "key": "leader_ip"},
+	{"name": "isBackup", "key": "isBackup"},
+	{"name": "backupIP", "key": "backup_ip"},
+	{"name": "authenticated", "key": "authenticated"}
+]

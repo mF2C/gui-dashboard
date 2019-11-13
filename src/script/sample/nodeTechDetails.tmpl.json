@@ -1,0 +1,10 @@
+[
+			{"name": "os", "key": "os"},
+			{"name": "arch", "key": "arch"},
+			{"name": "cpuManufacturer", "key": "cpuManufacturer"},
+			{"name": "physicalCores", "key": "physicalCores"},
+			{"name": "logicalCores", "key": "logicalCores"},
+			{"name": "cpuClockSpeed", "key": "cpuClockSpeed"},
+			{"name": "memory", "key": "memory"},
+			{"name": "storage", "key": "storage"}
+		]

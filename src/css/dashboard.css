@@ -27,6 +27,13 @@ vis-network{
 }
 
 /*
+* Popover
+*/
+.popover {
+	position: relative;
+}
+
+/*
  * Sidebar
  */
 

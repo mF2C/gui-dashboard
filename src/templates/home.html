@@ -3,20 +3,19 @@
 					</div>
 					<div class="w-100 titoloSezione" ng-init="home.init();">Topology</div>
 					<!-- div class="w-100" id="mynetwork"></div-->
-					<vis-network data="home.data" options="home.options"></vis-network>
+					<vis-network data="home.data" options="home.options" events="home.networkEvents"></vis-network>
 					
 					<!--div class="w-100 titoloSezione">Status</div>
 					<div class="w-100" id="statusChart"></div-->
 					
 					<vis-graph2d data="home.dataStatus" options="home.optionsStatus"></vis-graph2d>
 					
-					<div class="w-100 titoloSezione">Node Details</div>
-					
+					<!-- <div class="w-100 titoloSezione">Node Details</div> -->
 					<div class="w-100" id="nodeDetail">
 						<table class="table table-striped table-hover">
 							<thead>
 								<tr>
-									<th>Property</th>
+									<th width="20%">Property</th>
 									<th>Value</th>
 								</tr>
 							</thead>
@@ -29,12 +28,12 @@
 						</table>
 					</div>
 
-					<div class="w-100 titoloSezione">Technical Node Details</div>
+					<div class="w-100 titoloSezione">Device details</div>
 					<div class="w-100" id="nodeTechDetail">
 						<table class="table table-striped table-hover">
 							<thead>
 								<tr>
-									<th>Property</th>
+									<th width="20%">Property</th>
 									<th>Value</th>
 								</tr>
 							</thead>
@@ -46,3 +45,36 @@
 							</tbody>
 						</table>
 					</div>
+					
+					<div class="w-100 titoloSezione">Device dynamic data</div>
+					<div class="w-100" id="nodeDynamicData">
+						<table class="table table-striped table-hover">
+							<thead>
+								<tr>
+									<th width="20%">Property</th>
+									<th>Value</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="item in home.nodeDynamics">
+									<td>{{item.name}}</td>
+									<td>{{item.value}}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div ng-show="home.childrenDetails.length > 0">
+						<div class="w-100 titoloSezione">Children agents</div>
+						<div class="w-100" id="childrenDetails">
+							<table class="table table-striped table-hover">
+								<tbody>
+									<tr ng-repeat="item in home.childrenDetails">
+										<td>{{item.ip}}</td>
+										<td><a href="{{item.url}}" target="_blank">Dashboard</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					

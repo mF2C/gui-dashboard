@@ -1,5 +1,5 @@
 <?php 
-    DEFINE(API_END_POINT, 'https://proxy')
+    DEFINE("API_END_POINT", 'https://proxy')
 
 
 

@@ -8,8 +8,8 @@
 		
 		this.init = function(){
 			var temp = this;
-			console.log("init");
-			console.log($("#page").contents());
+			//console.log("init");
+			//console.log($("#page").contents());
 		};
 
 	});

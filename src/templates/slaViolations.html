@@ -1,5 +1,20 @@
-					<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-						<h1 class="h2">SLA violations</h1>
-					</div>
-					<div class="w-100 titoloSezione" ng-init="sla.init();">TBD</div>
+					<style type="text/css">
+						#page{
+							width:100%;
+							border:none;
+						}
+						#main{
+							padding:0!important;
+						}
+					</style>
+					<iframe id="page" src="/sla/" ></iframe>
+				<script>
+					$("#page").css("height", $('.sidebar-sticky').outerHeight());
+					var iframe = document.getElementById("page");
 					
+					$(document).ready(function(){
+						var iFrameDOM = $("iframe#page").contents();
+
+						//console.log(iFrameDOM.find("body"));
+					});
+				</script>

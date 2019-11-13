@@ -3,6 +3,10 @@
     require_once '../net/netCalls.php';
     header('Content-Type: application/json');
     switch($_REQUEST['action']){
+        case 'getEntryPoint':
+            $ret = getEntryPoint();
+            echo $ret;
+            break;
         case 'deviceDynamic':
             $ret = deviceDynamic();
             echo $ret;
@@ -12,7 +16,7 @@
             echo $ret;
             break;
         case 'getAgent':
-            $ret = getDevice();
+            $ret = getAgent();
             echo $ret;
             break;
         case 'createService':
@@ -21,6 +25,10 @@
             break;
         case 'getAllServices':
             $ret = getAllServices();
+            echo $ret;
+            break;
+        case 'getGraphData':
+            $ret = getGraphData();
             echo $ret;
             break;
         default:

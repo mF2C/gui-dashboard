@@ -1,0 +1,6 @@
+[
+	{"name": "cpuFreePercent", "key": "cpuFreePercent"},
+	{"name": "ramFreePercent", "key": "ramFreePercent"},
+	{"name": "storageFree", "key": "storageFree"},
+	{"name": "powerPlugged", "key": "powerPlugged"}
+]

@@ -54,16 +54,19 @@
 								<a class="nav-link active" id="menuHome" href="#"> <span data-feather="home"></span> Dashboard <span class="sr-only">(current)</span> </a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#!/cimi" id="cimi">CIMI Resources Browser </a>
+								<a class="nav-link" id="menuCimi" href="#!/cimi">CIMI Resources Browser </a>
+							</li>
+							<!-- 
+							<li class="nav-item">
+								<a class="nav-link" id="menuEventStatus" href="#!/eventStatus"></span> Event Status </a>
+							</li>
+							 -->
+							<li class="nav-item">
+								<a class="nav-link" id="menuSla" href="#!/slaViolations"></span> SLA Violations </a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#!/eventStatus"></span> Event Status </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#!/slaViolations"></span> SLA Violations </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#!/userManagement"></span> User Management </a>
+								<a class="nav-link" id="menuUserMgmt" href="{{app.guiUrls.lmui}}" target="_blank"></span> User Management </a>
+								<!-- <a class="nav-link" id="menuUserMgmt" href="#!/userManagement"></span> User Management </a> -->
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" id="menuServices" href="#!/services"></span> Services LC and instances </a>
@@ -83,8 +86,10 @@
 		<script type="text/javascript" src="script/angularjs/angular.min.js"></script>
 		<script src="script/angularjs/angular-route.min.js"></script>
 		<script src="script/bootstrap/bootstrap.bundle.min.js"></script>
+		<!-- 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+		 -->
 		<script type="text/javascript" src="script/vis.min.js"></script>
 		<script type="text/javascript" src="script/angular-vis.js"></script>
 		<script type="text/javascript" src="script/app/app.js"></script>
