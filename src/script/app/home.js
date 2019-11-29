@@ -4,7 +4,7 @@
 		var temp = this;
 		$(".active").removeClass('active');
 		$("#menuHome").addClass('active');
-		
+
 		
 		var pop_x = 0, 
 			pop_y = 0,
@@ -369,6 +369,19 @@
 					});
 					_topology.edges.push({"from": 0,"to": _id});
 					agentTopology.push({id: i+1, ip: _child});
+				}
+				var _backup = _self.backup_ip || "";
+				if(_backup.length > 0 ){
+					let _backupid =  _topology.nodes.length;
+					_topology.nodes.push({
+						id: _backupid,
+						label:  "Backup\n\n"+_backup,
+						shape: "circle", 
+						color: "tomato",
+						level:0
+					})
+					_topology.edges.push({"from": 0,"to": _backupid});
+					agentTopology.push({id: _backupid, ip: _backup});
 				}
 			}
 			temp.data = _topology;
